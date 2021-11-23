@@ -7,7 +7,7 @@ import androidx.room.Query
 import com.utb.fai.roomwordsample.db.Word
 import kotlinx.coroutines.flow.Flow
 
-class WordDao {
+
     @Dao
     interface WordDao {
 
@@ -20,4 +20,3 @@ class WordDao {
         @Query("DELETE FROM word_table")
         suspend fun deleteAll()
     }
-}
